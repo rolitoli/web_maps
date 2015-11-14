@@ -1,0 +1,61 @@
+
+body {
+    font-family:'Open Sans', sans-serif;
+    font-size:14px;
+}
+
+
+.contenedor {
+   width: 95%;
+   max-width:1000px;
+   margin: auto;
+}
+	.contenedor p{
+		font-weight:300;
+   		line-height:30px;
+    	padding-bottom:20px;
+    	padding-left: 20px;
+   		margin-bottom: 20px;
+	}
+	.contenedor h2{
+		background: #3498db;
+		color: #fff;
+		font-weight:300;
+   		line-height:30px;
+    	padding-bottom:20px;
+    	padding-left: 20px;
+   		margin-bottom: 20px;
+	}
+
+.mapa{
+	width:500px;
+	height: 100%;
+}
+
+header nav {
+	padding-top: 10px;
+	background: #3498db;
+	margin-bottom: 10px;
+}
+
+	header nav ul {
+		list-style: none;
+		overflow: hidden;
+	}
+
+		header nav ul li{
+			float: left;
+		}
+
+			header nav ul li a{
+				display: block;
+				padding: 20 px;
+				color: #fff;
+				text-decoration: none;
+			}
+			header nav ul li a: hover{
+				padding: 10 px;
+				background: #2980b9;
+			}
+
+

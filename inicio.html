@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Guia Turistica</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="http://maps.googleapis.com/maps/api/js?KEy=AIzaSyCJdTtiT6oD_DoBq_W1zPIaBOdbp6CxjE4&libraries=places"></script>
+    <script src="https://www.google.com/jsapi"
+        type="text/javascript"></script>
+    <script src="tp3.js"></script>
+    <link rel= "stylesheet" href="css/estilo.css">
+  </head>
+
+  <body onload="initialize()">
+
+    <header>
+    <div class="contenedor">
+      <div class="logo">
+        <img src="imag/plain.png" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#"> Destino </a></li>
+          <li><a href="#"> Mapa </a></li>
+          <li><a href="#"> Imagenes </a></li>
+          <li><a href="#"> Clima </a></li>
+          <li><a href="#"> Destinos Cerca </a></li>
+
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <div class= "contenedor" id= "destino">
+      <h2>Informacion del destino</h2>
+      <br>Destino: </br>
+      <input type= "text" id="nueva_busqueda" size= "50">
+      <br>Ingrese fecha de Inicio:</br>
+      <input type="date" id="inicio" min="2015-1-1">
+      <br>Fecha de fin:<br>
+      <input type="date" id="fin" min="2015-1-2">
+      <button onclick= "iniciar()">Iniciar</button>
+    </div>
+    <div class= "contenedor">
+      <h2>Mapa</h2>
+      <div class= "mapa" id="mapa" style="width:500px;height:380px;"></div>
+    </div>
+    <div class= "contenedor" id="imagenes">
+      <h2>Imagenes del destino</h2>
+      <div id= "res_img"></div>
+    </div>
+    <div class= "contenedor" id="relacionados">
+      <h2>Info Turistica del destino</h2>
+      <div class="gs-result gs-webResult" id= "res_relacionados"></div>
+    </div>
+     <div class= "contenedor" id="ruta">
+      <h2>Ruta desde un segundo lugar</h2>
+      <div class= "mapa"id= "mapa_ruta" style="width:500px;height:380px;"></div>
+      <div class= "contenedor" id="floating-panel">
+        <b>Start: </b>
+        <input type= "text" id="start" size= "50">
+        <b>End: </b>
+        <input type= "text" id="end" size= "40">
+        <button id= "btn_cal">Calcular</button>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+
+
+  </body>
+</html>
