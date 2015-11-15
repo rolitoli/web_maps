@@ -21,12 +21,11 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#"> Destino </a></li>
-          <li><a href="#"> Mapa </a></li>
-          <li><a href="#"> Imagenes </a></li>
-          <li><a href="#"> Clima </a></li>
-          <li><a href="#"> Destinos Cerca </a></li>
-
+          <li><a href="#destino"> Informacion </a></li>
+          <li><a href="#mapa"> Mapa </a></li>
+          <li><a href="#imagenes"> Imagenes </a></li>
+          <li><a href="#relacionados"> Relacionados </a></li>
+          <li><a href="#ruta"> Rutas</a></li>
         </ul>
       </nav>
     </div>
@@ -58,16 +57,32 @@
       <h2>Ruta desde un segundo lugar</h2>
       <div class= "mapa"id= "mapa_ruta" style="width:500px;height:380px;"></div>
       <div class= "contenedor" id="floating-panel">
-        <b>Start: </b>
-        <input type= "text" id="start" size= "50">
-        <b>End: </b>
-        <input type= "text" id="end" size= "40">
-        <button id= "btn_cal">Calcular</button>
+        <div>
+          <b>Start: </b>
+          <input type= "text" id="start" size= "50">
+        </div>
+        <div>
+          <b>End: </b>
+          <input type= "text" id="end" size= "40">
+          <button id= "btn_cal">Calcular</button>
+        </div>
+        <div>
+          <b>Info de ruta:</b>
+          <div>
+            <b>Distancia:</b>
+            <b id= "r_distance" value=""></b>
+            <b>Tiempo:</b>
+            <b id= "r_time" value=""></b>
+          </div>
+          <div id="json">
+            <button onclick= "json()" id= "btn_json">JSON</button>
+          </div>
+        </div>
       </div>
     </div>
     <footer>
-
-    </footer>
+      <div>______________________________________________________________________________</div>
+      <div>TP3 | Lenguajes de Programación | by: Jose R. Li Acuña, Andres Fernadez | 2015 </div>
 
 
   </body>
